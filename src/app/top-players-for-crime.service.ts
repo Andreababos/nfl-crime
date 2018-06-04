@@ -10,7 +10,7 @@ export class TopPlayersService {
 
   constructor(private http:HttpClient) { }
 
-  getTopCrimes(crime){  
+  getTopPlayers(crime){  
     return this.http.get<Player[]>('http://nflarrest.com/api/v1/crime/topPlayers/'+crime)
   }
 

@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Top teams for {{crime}}</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Team</th>
+        <th scope="col">Team name</th>
+        <th scope="col">Team city</th>
+        <th scope="col">Arrest count</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let team of teams">
+        <td>{{team.Team}}</td>
+        <td>{{team.Team_name}}</td>
+        <td>{{team.Team_city}}</td>
+        <td>{{team.arrest_count}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>Top crimes</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Crime category</th>
+        <th scope="col">Arrest count</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let crime of crimes">
+        <td>{{crime.Category}}</td>
+        <td>{{crime.arrest_count}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
