@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { TopCrimesComponent } from './top-crimes/top-crimes.component';
 import { TopPlayersComponent } from './top-players/top-players.component';
 import { TopTeamsComponent } from './top-teams/top-teams.component';
+import { CrimeTimelineComponent } from './crime-timeline/crime-timeline.component';
 
 
 const routes: Routes = [
@@ -10,6 +11,7 @@ const routes: Routes = [
     { path: 'crimes', component: TopCrimesComponent },
     { path: 'players', component: TopPlayersComponent },
     { path: 'teams', component: TopTeamsComponent },
+    { path: 'crime-timeline', component: CrimeTimelineComponent },
     { path: '**', redirectTo: '' }
 ];
 

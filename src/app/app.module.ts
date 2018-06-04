@@ -9,6 +9,7 @@ import { TopPlayersComponent } from './top-players/top-players.component';
 import { TopTeamsComponent } from './top-teams/top-teams.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SearchPipe } from './search.pipe';
+import { CrimeTimelineComponent } from './crime-timeline/crime-timeline.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SearchPipe } from './search.pipe';
     TopCrimesComponent,
     TopPlayersComponent,
     TopTeamsComponent,
-    SearchPipe
+    SearchPipe,
+    CrimeTimelineComponent
   ],
   imports: [
     BrowserModule,
