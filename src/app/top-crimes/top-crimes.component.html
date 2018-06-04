@@ -1,5 +1,6 @@
 <div class="container">
   <h2>Top crimes</h2>
+  <input [(ngModel)]="searchText" placeholder="search for a crime">
   <table class="table table-striped">
     <thead>
       <tr>
@@ -8,7 +9,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let crime of crimes">
+      <tr *ngFor="let crime of crimes | search : searchText : 'Category'">
         <td>{{crime.Category}}</td>
         <td>{{crime.arrest_count}}</td>
       </tr>

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TopCrimesService } from '../top-crimes.service';
 import { Crime } from '../crime';
 
+
 @Component({
   selector: 'app-top-crimes',
   templateUrl: './top-crimes.component.html',
